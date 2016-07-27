@@ -44,14 +44,14 @@ class Home
         text "Electric Skateboard Calculator"
       end
 
-      div(class: "s10")
+      div(class: "s5")
 
       section(class: "calc-form") {
         form {
 
           div(class: "row") {
             h1 { text "Battery and Motor" }
-            div(class: "s10")
+            div(class: "s5")
 
             div(class: "col-xs-6") {
 
@@ -118,7 +118,7 @@ class Home
           }
 
           h1 { text "Gearing" }
-          div(class: "s10")
+          div(class: "s5")
 
           div(class: "wrap-60") {
             div(class: "form-group") {
@@ -150,21 +150,20 @@ class Home
             }
           }
 
-          h1 { text "Top Speed Results" }
-          div(class: "s10")
+          h1 { text "Top Speed" }
+          div(class: "s5")
 
           div(class: "form-group") {
-            label(class: "control-label") { text "Top Speed" }
             p(class: "form-control-static") {
-              text label_speed
+              text "#{label_speed}"
             }
           }
 
           div(class: "form-group") {
-            label(class: "control-label") { text "Top Speed (weighted)" }
-            p(class: "form-control-static") {
+            p {
               text  label_speed(weighted: true)
             }
+            label(class: "control-label up-10") { text "(weighted)" }
           }
 
         }

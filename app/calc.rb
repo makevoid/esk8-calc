@@ -24,7 +24,7 @@ class Calc
     motor_teeth    = store.get "motor-pulley-teeth"
     wheel_teeth    = store.get "wheel-pulley-teeth"
     gear_ratio     = motor_teeth / wheel_teeth
-    gear_ratio_out = (wheel_teeth / motor_teeth).round(1)
+    gear_ratio_out = (wheel_teeth / motor_teeth).round(2)
     store.set "out-gear-ratio", gear_ratio_out
 
     wheel_size = store.get "wheel-size"
