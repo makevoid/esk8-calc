@@ -14,11 +14,6 @@ class NavBar
                 text 'Home'
               end
             end
-            li class: "#{"active" if router.current_url?(:description)}" do
-              a href: router.url_for(:description) do
-                text 'Description'
-              end
-            end
           end
         end
       end
