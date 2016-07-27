@@ -1,10 +1,13 @@
 class Calc
   LIPO_VOLTS = 3.7
+  LIIO_VOLTS = 3.6
 
   R = 0.00003728226
 
   def self.calc!(store)
-    cell_volts = LIPO_VOLTS
+    type_lipo  = store.get "batt-type-lipo"
+    cell_volts = type_lipo == 1 ? LIPO_VOLTS : LIIO_VOLTS
+
     batt_cells = store.get "batt-cells"
     batt_volts = (batt_cells * cell_volts).round 1
     store.set "out-battery-volts", batt_volts
@@ -26,9 +29,7 @@ class Calc
 
     wheel_size = store.get "wheel-size"
     top_speed_mph   = motor_rpm * wheel_size * Math::PI * R * gear_ratio
-    top_speed_kmh   = top_speed_mph * 1.609344
     top_speed_mph_w = top_speed_mph * efficiency
-    top_speed_kmh_w = top_speed_kmh * efficiency
     store.set "out-top-speed", top_speed_mph
     store.set "out-top-speed-weighted", top_speed_mph_w
   end

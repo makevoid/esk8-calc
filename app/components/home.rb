@@ -15,6 +15,7 @@ class Home
   def change(e)
     key = e.target.name
     val = e.target.value
+    `console.log(key, val)`
     @store.set key, val.to_i
     Calc.calc! @store
     render!
@@ -26,7 +27,8 @@ class Home
 
   def label_speed(weighted: false)
     speed = @store.get "out-top-speed#{"-weighted" if weighted}"
-    "#{speed.round 2} km/h - x mph"
+    speed_kmh = speed * 1.609344
+    "#{speed.round 2} km/h - #{speed_kmh.round 2} mph"
   end
 
   def label_gear_ratio
@@ -57,9 +59,12 @@ class Home
                 label(for: "batt-type") {
                   text "Battery type"
                 }
-                select(name: "batt-type", id: "batt-type", class: "form-control") {
-                  option { text "Lipo" }
-                  option { text "Li-ion" }
+
+                lipo = @store.get("batt-type-lipo") == 1
+                
+                select(name: "batt-type-lipo", id: "batt-type", class: "form-control", onchange: method(:change)) {
+                  option(value: 1, selected: lipo) { text "Lipo" }
+                  option(value: 0, selected: !lipo) { text "Li-ion" }
                 }
               }
 

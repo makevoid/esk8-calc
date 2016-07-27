@@ -3,6 +3,7 @@ class Store
 
   def initialize
     @store = {
+      "batt-type-lipo"         => 1,
       "batt-cells"             => 10,
       "motor-kv"               => 200,
       "system-efficiency"      => 80,
