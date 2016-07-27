@@ -103,14 +103,14 @@ class Home
               div(class: "form-group") {
                 label(class: "control-label") { text "Motor RPM" }
                 p(class: "form-control-static") {
-                  text "#{@store.get "out-motor-rpm"} RPM"
+                  text "#{(@store.get "out-motor-rpm").round} RPM"
                 }
               }
 
               div(class: "form-group") {
                 label(class: "control-label") { text "Motor RPM (weighted)" }
                 p(class: "form-control-static") {
-                  text "#{@store.get "out-motor-rpm-weighted"} RPM"
+                  text "#{(@store.get "out-motor-rpm-weighted").round} RPM"
                 }
               }
 

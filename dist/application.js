@@ -23773,7 +23773,7 @@ Opal.modules["components/home"] = function(Opal) {
                   return ($r = ($t = self).$p, $r.$$p = (TMP_32 = function(){var self = TMP_32.$$s || this;
                     if (self.store == null) self.store = nil;
 
-                  return self.$text("" + (self.store.$get("out-motor-rpm")) + " RPM")}, TMP_32.$$s = self, TMP_32.$$arity = 0, TMP_32), $r).call($t, $hash2(["class"], {"class": "form-control-static"}));}, TMP_30.$$s = self, TMP_30.$$arity = 0, TMP_30), $o).call($q, $hash2(["class"], {"class": "form-group"}));
+                  return self.$text("" + ((self.store.$get("out-motor-rpm")).$round()) + " RPM")}, TMP_32.$$s = self, TMP_32.$$arity = 0, TMP_32), $r).call($t, $hash2(["class"], {"class": "form-control-static"}));}, TMP_30.$$s = self, TMP_30.$$arity = 0, TMP_30), $o).call($q, $hash2(["class"], {"class": "form-group"}));
                 return ($o = ($r = self).$div, $o.$$p = (TMP_33 = function(){var self = TMP_33.$$s || this, $s, $t, TMP_34, $u, TMP_35;
 
                 ($s = ($t = self).$label, $s.$$p = (TMP_34 = function(){var self = TMP_34.$$s || this;
@@ -23782,7 +23782,7 @@ Opal.modules["components/home"] = function(Opal) {
                   return ($s = ($u = self).$p, $s.$$p = (TMP_35 = function(){var self = TMP_35.$$s || this;
                     if (self.store == null) self.store = nil;
 
-                  return self.$text("" + (self.store.$get("out-motor-rpm-weighted")) + " RPM")}, TMP_35.$$s = self, TMP_35.$$arity = 0, TMP_35), $s).call($u, $hash2(["class"], {"class": "form-control-static"}));}, TMP_33.$$s = self, TMP_33.$$arity = 0, TMP_33), $o).call($r, $hash2(["class"], {"class": "form-group"}));}, TMP_26.$$s = self, TMP_26.$$arity = 0, TMP_26), $k).call($n, $hash2(["class"], {"class": "col-xs-6"}));}, TMP_12.$$s = self, TMP_12.$$arity = 0, TMP_12), $i).call($j, $hash2(["class"], {"class": "row"}));
+                  return self.$text("" + ((self.store.$get("out-motor-rpm-weighted")).$round()) + " RPM")}, TMP_35.$$s = self, TMP_35.$$arity = 0, TMP_35), $s).call($u, $hash2(["class"], {"class": "form-control-static"}));}, TMP_33.$$s = self, TMP_33.$$arity = 0, TMP_33), $o).call($r, $hash2(["class"], {"class": "form-group"}));}, TMP_26.$$s = self, TMP_26.$$arity = 0, TMP_26), $k).call($n, $hash2(["class"], {"class": "col-xs-6"}));}, TMP_12.$$s = self, TMP_12.$$arity = 0, TMP_12), $i).call($j, $hash2(["class"], {"class": "row"}));
             ($i = ($k = self).$h1, $i.$$p = (TMP_36 = function(){var self = TMP_36.$$s || this;
 
             return self.$text("Gearing")}, TMP_36.$$s = self, TMP_36.$$arity = 0, TMP_36), $i).call($k);
