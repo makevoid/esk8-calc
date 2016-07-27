@@ -23632,7 +23632,7 @@ Opal.modules["components/home"] = function(Opal) {
     function $Home(){};
     var self = $Home = $klass($base, $super, 'Home', $Home);
 
-    var def = self.$$proto, $scope = self.$$scope, TMP_2, TMP_3, TMP_4, TMP_5, TMP_6, TMP_54;
+    var def = self.$$proto, $scope = self.$$scope, TMP_2, TMP_3, TMP_4, TMP_5, TMP_6, TMP_60;
 
     def.store = nil;
     self.$include((($scope.get('Inesita')).$$scope.get('Component')));
@@ -23693,154 +23693,167 @@ Opal.modules["components/home"] = function(Opal) {
       return "" + (self.store.$get("out-gear-ratio")) + ":1";
     }, TMP_6.$$arity = 0);
 
-    return (Opal.defn(self, '$render', TMP_54 = function ːrender() {
+    return (Opal.defn(self, '$render', TMP_60 = function ːrender() {
       var $a, $b, TMP_7, self = this;
 
-      return ($a = ($b = self).$div, $a.$$p = (TMP_7 = function(){var self = TMP_7.$$s || this, $c, $d, TMP_8, $e, TMP_9, $f, TMP_10, $g, TMP_53;
+      return ($a = ($b = self).$div, $a.$$p = (TMP_7 = function(){var self = TMP_7.$$s || this, $c, $d, TMP_8, $e, TMP_9, $f, TMP_10, $g, TMP_59;
 
       ($c = ($d = self).$h1, $c.$$p = (TMP_8 = function(){var self = TMP_8.$$s || this;
 
         return self.$text("ESK8 Calc")}, TMP_8.$$s = self, TMP_8.$$arity = 0, TMP_8), $c).call($d);
         ($c = ($e = self).$p, $c.$$p = (TMP_9 = function(){var self = TMP_9.$$s || this;
 
-        return self.$text("Electric Skateboard Calculator")}, TMP_9.$$s = self, TMP_9.$$arity = 0, TMP_9), $c).call($e);
-        self.$div($hash2(["class"], {"class": "s5"}));
+        return self.$text("Electric Skateboard Calculator")}, TMP_9.$$s = self, TMP_9.$$arity = 0, TMP_9), $c).call($e, $hash2(["class"], {"class": "tagline"}));
+        self.$div($hash2(["class"], {"class": "s20"}));
         ($c = ($f = self).$section, $c.$$p = (TMP_10 = function(){var self = TMP_10.$$s || this, $g, $h, TMP_11;
 
-        return ($g = ($h = self).$form, $g.$$p = (TMP_11 = function(){var self = TMP_11.$$s || this, $i, $j, TMP_12, $k, TMP_36, $l, TMP_37, $m, TMP_44, $n, TMP_47, $o, TMP_48, $p, TMP_50;
+        return ($g = ($h = self).$form, $g.$$p = (TMP_11 = function(){var self = TMP_11.$$s || this, $i, $j, TMP_12, $k, TMP_17, $l, TMP_53, $m, TMP_54, $n, TMP_56;
 
-          ($i = ($j = self).$div, $i.$$p = (TMP_12 = function(){var self = TMP_12.$$s || this, $k, $l, TMP_13, $m, TMP_14, $n, TMP_26;
+          ($i = ($j = self).$div, $i.$$p = (TMP_12 = function(){var self = TMP_12.$$s || this, $k, $l, TMP_13, $m, TMP_15;
 
-            ($k = ($l = self).$h1, $k.$$p = (TMP_13 = function(){var self = TMP_13.$$s || this;
+            ($k = ($l = self).$div, $k.$$p = (TMP_13 = function(){var self = TMP_13.$$s || this, $m, $n, TMP_14;
 
-              return self.$text("Battery and Motor")}, TMP_13.$$s = self, TMP_13.$$arity = 0, TMP_13), $k).call($l);
-              self.$div($hash2(["class"], {"class": "s5"}));
-              ($k = ($m = self).$div, $k.$$p = (TMP_14 = function(){var self = TMP_14.$$s || this, $n, $o, TMP_15, $p, TMP_20, $q, TMP_22, $r, TMP_24;
+              ($m = ($n = self).$h1, $m.$$p = (TMP_14 = function(){var self = TMP_14.$$s || this;
 
-              ($n = ($o = self).$div, $n.$$p = (TMP_15 = function(){var self = TMP_15.$$s || this, $p, $q, TMP_16, $r, TMP_17, lipo = nil;
+                return self.$text("Battery and Motor")}, TMP_14.$$s = self, TMP_14.$$arity = 0, TMP_14), $m).call($n);
+                return self.$div($hash2(["class"], {"class": "s10"}));}, TMP_13.$$s = self, TMP_13.$$arity = 0, TMP_13), $k).call($l, $hash2(["class"], {"class": "col-xs-12 col-md-8"}));
+              return ($k = ($m = self).$div, $k.$$p = (TMP_15 = function(){var self = TMP_15.$$s || this, $n, $o, TMP_16;
+
+              return ($n = ($o = self).$h1, $n.$$p = (TMP_16 = function(){var self = TMP_16.$$s || this;
+
+                return self.$text("Gearing")}, TMP_16.$$s = self, TMP_16.$$arity = 0, TMP_16), $n).call($o)}, TMP_15.$$s = self, TMP_15.$$arity = 0, TMP_15), $k).call($m, $hash2(["class"], {"class": "col-xs-12 col-md-4 heading-gearing"}));}, TMP_12.$$s = self, TMP_12.$$arity = 0, TMP_12), $i).call($j, $hash2(["class"], {"class": "row"}));
+            ($i = ($k = self).$div, $i.$$p = (TMP_17 = function(){var self = TMP_17.$$s || this, $l, $m, TMP_18, $n, TMP_30, $o, TMP_40;
+
+            ($l = ($m = self).$div, $l.$$p = (TMP_18 = function(){var self = TMP_18.$$s || this, $n, $o, TMP_19, $p, TMP_24, $q, TMP_26, $r, TMP_28;
+
+              ($n = ($o = self).$div, $n.$$p = (TMP_19 = function(){var self = TMP_19.$$s || this, $p, $q, TMP_20, $r, TMP_21, lipo = nil;
                   if (self.store == null) self.store = nil;
 
-                ($p = ($q = self).$label, $p.$$p = (TMP_16 = function(){var self = TMP_16.$$s || this;
+                ($p = ($q = self).$label, $p.$$p = (TMP_20 = function(){var self = TMP_20.$$s || this;
 
-                  return self.$text("Battery type")}, TMP_16.$$s = self, TMP_16.$$arity = 0, TMP_16), $p).call($q, $hash2(["for"], {"for": "batt-type"}));
+                  return self.$text("Battery type")}, TMP_20.$$s = self, TMP_20.$$arity = 0, TMP_20), $p).call($q, $hash2(["for"], {"for": "batt-type"}));
                   lipo = self.store.$get("batt-type-lipo")['$=='](1);
-                  return ($p = ($r = self).$select, $p.$$p = (TMP_17 = function(){var self = TMP_17.$$s || this, $s, $t, TMP_18, $u, TMP_19;
+                  return ($p = ($r = self).$select, $p.$$p = (TMP_21 = function(){var self = TMP_21.$$s || this, $s, $t, TMP_22, $u, TMP_23;
 
-                  ($s = ($t = self).$option, $s.$$p = (TMP_18 = function(){var self = TMP_18.$$s || this;
+                  ($s = ($t = self).$option, $s.$$p = (TMP_22 = function(){var self = TMP_22.$$s || this;
 
-                    return self.$text("Lipo")}, TMP_18.$$s = self, TMP_18.$$arity = 0, TMP_18), $s).call($t, $hash2(["value", "selected"], {"value": 1, "selected": lipo}));
-                    return ($s = ($u = self).$option, $s.$$p = (TMP_19 = function(){var self = TMP_19.$$s || this;
+                    return self.$text("Lipo")}, TMP_22.$$s = self, TMP_22.$$arity = 0, TMP_22), $s).call($t, $hash2(["value", "selected"], {"value": 1, "selected": lipo}));
+                    return ($s = ($u = self).$option, $s.$$p = (TMP_23 = function(){var self = TMP_23.$$s || this;
 
-                    return self.$text("Li-ion")}, TMP_19.$$s = self, TMP_19.$$arity = 0, TMP_19), $s).call($u, $hash2(["value", "selected"], {"value": 0, "selected": lipo['$!']()}));}, TMP_17.$$s = self, TMP_17.$$arity = 0, TMP_17), $p).call($r, $hash2(["name", "id", "class", "onchange"], {"name": "batt-type-lipo", "id": "batt-type", "class": "form-control", "onchange": self.$method("change")}));}, TMP_15.$$s = self, TMP_15.$$arity = 0, TMP_15), $n).call($o, $hash2(["class"], {"class": "form-group"}));
-                ($n = ($p = self).$div, $n.$$p = (TMP_20 = function(){var self = TMP_20.$$s || this, $q, $r, TMP_21;
+                    return self.$text("Li-ion")}, TMP_23.$$s = self, TMP_23.$$arity = 0, TMP_23), $s).call($u, $hash2(["value", "selected"], {"value": 0, "selected": lipo['$!']()}));}, TMP_21.$$s = self, TMP_21.$$arity = 0, TMP_21), $p).call($r, $hash2(["name", "id", "class", "onchange"], {"name": "batt-type-lipo", "id": "batt-type", "class": "form-control", "onchange": self.$method("change")}));}, TMP_19.$$s = self, TMP_19.$$arity = 0, TMP_19), $n).call($o, $hash2(["class"], {"class": "form-group"}));
+                ($n = ($p = self).$div, $n.$$p = (TMP_24 = function(){var self = TMP_24.$$s || this, $q, $r, TMP_25;
                   if (self.store == null) self.store = nil;
 
-                ($q = ($r = self).$label, $q.$$p = (TMP_21 = function(){var self = TMP_21.$$s || this;
+                ($q = ($r = self).$label, $q.$$p = (TMP_25 = function(){var self = TMP_25.$$s || this;
 
-                  return self.$text("Number of Cells (6S-12S)")}, TMP_21.$$s = self, TMP_21.$$arity = 0, TMP_21), $q).call($r, $hash2(["for"], {"for": "batt-cells"}));
-                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "batt-cells", "value": self.store.$get("batt-cells"), "onkeyup": self.$method("change"), "type": "text", "id": "batt-cells", "class": "form-control"}));}, TMP_20.$$s = self, TMP_20.$$arity = 0, TMP_20), $n).call($p, $hash2(["class"], {"class": "form-group"}));
-                ($n = ($q = self).$div, $n.$$p = (TMP_22 = function(){var self = TMP_22.$$s || this, $r, $s, TMP_23;
+                  return self.$text("Number of Cells (6S-12S)")}, TMP_25.$$s = self, TMP_25.$$arity = 0, TMP_25), $q).call($r, $hash2(["for"], {"for": "batt-cells"}));
+                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "batt-cells", "value": self.store.$get("batt-cells"), "onkeyup": self.$method("change"), "type": "text", "id": "batt-cells", "class": "form-control"}));}, TMP_24.$$s = self, TMP_24.$$arity = 0, TMP_24), $n).call($p, $hash2(["class"], {"class": "form-group"}));
+                ($n = ($q = self).$div, $n.$$p = (TMP_26 = function(){var self = TMP_26.$$s || this, $r, $s, TMP_27;
                   if (self.store == null) self.store = nil;
 
-                ($r = ($s = self).$label, $r.$$p = (TMP_23 = function(){var self = TMP_23.$$s || this;
+                ($r = ($s = self).$label, $r.$$p = (TMP_27 = function(){var self = TMP_27.$$s || this;
 
-                  return self.$text("Motor KV")}, TMP_23.$$s = self, TMP_23.$$arity = 0, TMP_23), $r).call($s, $hash2(["for"], {"for": "motor-kv"}));
-                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "motor-kv", "value": self.store.$get("motor-kv"), "onkeyup": self.$method("change"), "type": "text", "id": "motor-kv", "class": "form-control"}));}, TMP_22.$$s = self, TMP_22.$$arity = 0, TMP_22), $n).call($q, $hash2(["class"], {"class": "form-group"}));
-                return ($n = ($r = self).$div, $n.$$p = (TMP_24 = function(){var self = TMP_24.$$s || this, $s, $t, TMP_25;
+                  return self.$text("Motor KV")}, TMP_27.$$s = self, TMP_27.$$arity = 0, TMP_27), $r).call($s, $hash2(["for"], {"for": "motor-kv"}));
+                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "motor-kv", "value": self.store.$get("motor-kv"), "onkeyup": self.$method("change"), "type": "text", "id": "motor-kv", "class": "form-control"}));}, TMP_26.$$s = self, TMP_26.$$arity = 0, TMP_26), $n).call($q, $hash2(["class"], {"class": "form-group"}));
+                return ($n = ($r = self).$div, $n.$$p = (TMP_28 = function(){var self = TMP_28.$$s || this, $s, $t, TMP_29;
                   if (self.store == null) self.store = nil;
 
-                ($s = ($t = self).$label, $s.$$p = (TMP_25 = function(){var self = TMP_25.$$s || this;
+                ($s = ($t = self).$label, $s.$$p = (TMP_29 = function(){var self = TMP_29.$$s || this;
 
-                  return self.$text("Efficiency  (60-90%)")}, TMP_25.$$s = self, TMP_25.$$arity = 0, TMP_25), $s).call($t, $hash2(["for"], {"for": "system-efficiency"}));
-                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "system-efficiency", "value": self.store.$get("system-efficiency"), "onkeyup": self.$method("change"), "type": "text", "id": "system-efficiency", "class": "form-control"}));}, TMP_24.$$s = self, TMP_24.$$arity = 0, TMP_24), $n).call($r, $hash2(["class"], {"class": "form-group"}));}, TMP_14.$$s = self, TMP_14.$$arity = 0, TMP_14), $k).call($m, $hash2(["class"], {"class": "col-xs-6"}));
-              return ($k = ($n = self).$div, $k.$$p = (TMP_26 = function(){var self = TMP_26.$$s || this, $o, $p, TMP_27, $q, TMP_30, $r, TMP_33;
+                  return self.$text("Efficiency  (60-90%)")}, TMP_29.$$s = self, TMP_29.$$arity = 0, TMP_29), $s).call($t, $hash2(["for"], {"for": "system-efficiency"}));
+                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "system-efficiency", "value": self.store.$get("system-efficiency"), "onkeyup": self.$method("change"), "type": "text", "id": "system-efficiency", "class": "form-control"}));}, TMP_28.$$s = self, TMP_28.$$arity = 0, TMP_28), $n).call($r, $hash2(["class"], {"class": "form-group"}));}, TMP_18.$$s = self, TMP_18.$$arity = 0, TMP_18), $l).call($m, $hash2(["class"], {"class": "col-md-4 col-xs-12"}));
+              ($l = ($n = self).$div, $l.$$p = (TMP_30 = function(){var self = TMP_30.$$s || this, $o, $p, TMP_31, $q, TMP_34, $r, TMP_37;
 
               self.$div($hash2(["class"], {"class": "s30"}));
-                ($o = ($p = self).$div, $o.$$p = (TMP_27 = function(){var self = TMP_27.$$s || this, $q, $r, TMP_28, $s, TMP_29;
+                ($o = ($p = self).$div, $o.$$p = (TMP_31 = function(){var self = TMP_31.$$s || this, $q, $r, TMP_32, $s, TMP_33;
 
-                ($q = ($r = self).$label, $q.$$p = (TMP_28 = function(){var self = TMP_28.$$s || this;
+                ($q = ($r = self).$label, $q.$$p = (TMP_32 = function(){var self = TMP_32.$$s || this;
 
-                  return self.$text("Battery volts")}, TMP_28.$$s = self, TMP_28.$$arity = 0, TMP_28), $q).call($r, $hash2(["class"], {"class": "control-label"}));
-                  return ($q = ($s = self).$p, $q.$$p = (TMP_29 = function(){var self = TMP_29.$$s || this;
+                  return self.$text("Battery volts")}, TMP_32.$$s = self, TMP_32.$$arity = 0, TMP_32), $q).call($r, $hash2(["class"], {"class": "control-label"}));
+                  return ($q = ($s = self).$p, $q.$$p = (TMP_33 = function(){var self = TMP_33.$$s || this;
                     if (self.store == null) self.store = nil;
 
-                  return self.$text("" + (self.store.$get("out-battery-volts")) + " V")}, TMP_29.$$s = self, TMP_29.$$arity = 0, TMP_29), $q).call($s, $hash2(["class"], {"class": "form-control-static"}));}, TMP_27.$$s = self, TMP_27.$$arity = 0, TMP_27), $o).call($p, $hash2(["class"], {"class": "form-group"}));
-                ($o = ($q = self).$div, $o.$$p = (TMP_30 = function(){var self = TMP_30.$$s || this, $r, $s, TMP_31, $t, TMP_32;
+                  return self.$text("" + (self.store.$get("out-battery-volts")) + " V")}, TMP_33.$$s = self, TMP_33.$$arity = 0, TMP_33), $q).call($s, $hash2(["class"], {"class": "form-control-static"}));}, TMP_31.$$s = self, TMP_31.$$arity = 0, TMP_31), $o).call($p, $hash2(["class"], {"class": "form-group"}));
+                ($o = ($q = self).$div, $o.$$p = (TMP_34 = function(){var self = TMP_34.$$s || this, $r, $s, TMP_35, $t, TMP_36;
 
-                ($r = ($s = self).$label, $r.$$p = (TMP_31 = function(){var self = TMP_31.$$s || this;
+                ($r = ($s = self).$label, $r.$$p = (TMP_35 = function(){var self = TMP_35.$$s || this;
 
-                  return self.$text("Motor RPM")}, TMP_31.$$s = self, TMP_31.$$arity = 0, TMP_31), $r).call($s, $hash2(["class"], {"class": "control-label"}));
-                  return ($r = ($t = self).$p, $r.$$p = (TMP_32 = function(){var self = TMP_32.$$s || this;
+                  return self.$text("Motor RPM")}, TMP_35.$$s = self, TMP_35.$$arity = 0, TMP_35), $r).call($s, $hash2(["class"], {"class": "control-label"}));
+                  return ($r = ($t = self).$p, $r.$$p = (TMP_36 = function(){var self = TMP_36.$$s || this;
                     if (self.store == null) self.store = nil;
 
-                  return self.$text("" + ((self.store.$get("out-motor-rpm")).$round()) + " RPM")}, TMP_32.$$s = self, TMP_32.$$arity = 0, TMP_32), $r).call($t, $hash2(["class"], {"class": "form-control-static"}));}, TMP_30.$$s = self, TMP_30.$$arity = 0, TMP_30), $o).call($q, $hash2(["class"], {"class": "form-group"}));
-                return ($o = ($r = self).$div, $o.$$p = (TMP_33 = function(){var self = TMP_33.$$s || this, $s, $t, TMP_34, $u, TMP_35;
+                  return self.$text("" + ((self.store.$get("out-motor-rpm")).$round()) + " RPM")}, TMP_36.$$s = self, TMP_36.$$arity = 0, TMP_36), $r).call($t, $hash2(["class"], {"class": "form-control-static"}));}, TMP_34.$$s = self, TMP_34.$$arity = 0, TMP_34), $o).call($q, $hash2(["class"], {"class": "form-group"}));
+                return ($o = ($r = self).$div, $o.$$p = (TMP_37 = function(){var self = TMP_37.$$s || this, $s, $t, TMP_38, $u, TMP_39;
 
-                ($s = ($t = self).$label, $s.$$p = (TMP_34 = function(){var self = TMP_34.$$s || this;
+                ($s = ($t = self).$label, $s.$$p = (TMP_38 = function(){var self = TMP_38.$$s || this;
 
-                  return self.$text("Motor RPM (weighted)")}, TMP_34.$$s = self, TMP_34.$$arity = 0, TMP_34), $s).call($t, $hash2(["class"], {"class": "control-label"}));
-                  return ($s = ($u = self).$p, $s.$$p = (TMP_35 = function(){var self = TMP_35.$$s || this;
+                  return self.$text("Motor RPM (weighted)")}, TMP_38.$$s = self, TMP_38.$$arity = 0, TMP_38), $s).call($t, $hash2(["class"], {"class": "control-label"}));
+                  return ($s = ($u = self).$p, $s.$$p = (TMP_39 = function(){var self = TMP_39.$$s || this;
                     if (self.store == null) self.store = nil;
 
-                  return self.$text("" + ((self.store.$get("out-motor-rpm-weighted")).$round()) + " RPM")}, TMP_35.$$s = self, TMP_35.$$arity = 0, TMP_35), $s).call($u, $hash2(["class"], {"class": "form-control-static"}));}, TMP_33.$$s = self, TMP_33.$$arity = 0, TMP_33), $o).call($r, $hash2(["class"], {"class": "form-group"}));}, TMP_26.$$s = self, TMP_26.$$arity = 0, TMP_26), $k).call($n, $hash2(["class"], {"class": "col-xs-6"}));}, TMP_12.$$s = self, TMP_12.$$arity = 0, TMP_12), $i).call($j, $hash2(["class"], {"class": "row"}));
-            ($i = ($k = self).$h1, $i.$$p = (TMP_36 = function(){var self = TMP_36.$$s || this;
+                  return self.$text("" + ((self.store.$get("out-motor-rpm-weighted")).$round()) + " RPM")}, TMP_39.$$s = self, TMP_39.$$arity = 0, TMP_39), $s).call($u, $hash2(["class"], {"class": "form-control-static"}));}, TMP_37.$$s = self, TMP_37.$$arity = 0, TMP_37), $o).call($r, $hash2(["class"], {"class": "form-group"}));}, TMP_30.$$s = self, TMP_30.$$arity = 0, TMP_30), $l).call($n, $hash2(["class"], {"class": "col-xs-12 col-md-4"}));
+              return ($l = ($o = self).$div, $l.$$p = (TMP_40 = function(){var self = TMP_40.$$s || this, $p, $q, TMP_41, $r, TMP_43, $s, TMP_50;
 
-            return self.$text("Gearing")}, TMP_36.$$s = self, TMP_36.$$arity = 0, TMP_36), $i).call($k);
+              ($p = ($q = self).$div, $p.$$p = (TMP_41 = function(){var self = TMP_41.$$s || this, $r, $s, TMP_42;
+
+                return ($r = ($s = self).$h1, $r.$$p = (TMP_42 = function(){var self = TMP_42.$$s || this;
+
+                  return self.$text("Gearing")}, TMP_42.$$s = self, TMP_42.$$arity = 0, TMP_42), $r).call($s)}, TMP_41.$$s = self, TMP_41.$$arity = 0, TMP_41), $p).call($q, $hash2(["class"], {"class": "heading-gearing-sm"}));
+                self.$div($hash2(["class"], {"class": "s5"}));
+                ($p = ($r = self).$div, $p.$$p = (TMP_43 = function(){var self = TMP_43.$$s || this, $s, $t, TMP_44, $u, TMP_46, $v, TMP_48;
+
+                ($s = ($t = self).$div, $s.$$p = (TMP_44 = function(){var self = TMP_44.$$s || this, $u, $v, TMP_45;
+                    if (self.store == null) self.store = nil;
+
+                  ($u = ($v = self).$label, $u.$$p = (TMP_45 = function(){var self = TMP_45.$$s || this;
+
+                    return self.$text("Motor Pulley Teeth")}, TMP_45.$$s = self, TMP_45.$$arity = 0, TMP_45), $u).call($v, $hash2(["for"], {"for": "motor-pulley-teeth"}));
+                    return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "motor-pulley-teeth", "type": "text", "id": "motor-pulley-teeth", "class": "form-control", "value": self.store.$get("motor-pulley-teeth"), "onkeyup": self.$method("change")}));}, TMP_44.$$s = self, TMP_44.$$arity = 0, TMP_44), $s).call($t, $hash2(["class"], {"class": "form-group"}));
+                  ($s = ($u = self).$div, $s.$$p = (TMP_46 = function(){var self = TMP_46.$$s || this, $v, $w, TMP_47;
+                    if (self.store == null) self.store = nil;
+
+                  ($v = ($w = self).$label, $v.$$p = (TMP_47 = function(){var self = TMP_47.$$s || this;
+
+                    return self.$text("Wheel Pulley Teeth")}, TMP_47.$$s = self, TMP_47.$$arity = 0, TMP_47), $v).call($w, $hash2(["for"], {"for": "wheel-pulley-teeth"}));
+                    return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "wheel-pulley-teeth", "type": "text", "id": "wheel-pulley-teeth", "class": "form-control", "value": self.store.$get("wheel-pulley-teeth"), "onkeyup": self.$method("change")}));}, TMP_46.$$s = self, TMP_46.$$arity = 0, TMP_46), $s).call($u, $hash2(["class"], {"class": "form-group"}));
+                  return ($s = ($v = self).$div, $s.$$p = (TMP_48 = function(){var self = TMP_48.$$s || this, $w, $x, TMP_49;
+                    if (self.store == null) self.store = nil;
+
+                  ($w = ($x = self).$label, $w.$$p = (TMP_49 = function(){var self = TMP_49.$$s || this;
+
+                    return self.$text("Wheel size (mm)")}, TMP_49.$$s = self, TMP_49.$$arity = 0, TMP_49), $w).call($x, $hash2(["for"], {"for": "wheel-size"}));
+                    return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "wheel-size", "type": "text", "id": "wheel-size", "class": "form-control", "value": self.store.$get("wheel-size"), "onkeyup": self.$method("change")}));}, TMP_48.$$s = self, TMP_48.$$arity = 0, TMP_48), $s).call($v, $hash2(["class"], {"class": "form-group"}));}, TMP_43.$$s = self, TMP_43.$$arity = 0, TMP_43), $p).call($r, $hash2(["class"], {"class": ""}));
+                return ($p = ($s = self).$div, $p.$$p = (TMP_50 = function(){var self = TMP_50.$$s || this, $t, $u, TMP_51, $v, TMP_52;
+
+                ($t = ($u = self).$label, $t.$$p = (TMP_51 = function(){var self = TMP_51.$$s || this;
+
+                  return self.$text("Gear ratio")}, TMP_51.$$s = self, TMP_51.$$arity = 0, TMP_51), $t).call($u, $hash2(["class"], {"class": "control-label"}));
+                  return ($t = ($v = self).$p, $t.$$p = (TMP_52 = function(){var self = TMP_52.$$s || this;
+
+                  return self.$text(self.$label_gear_ratio())}, TMP_52.$$s = self, TMP_52.$$arity = 0, TMP_52), $t).call($v, $hash2(["class"], {"class": "form-control-static"}));}, TMP_50.$$s = self, TMP_50.$$arity = 0, TMP_50), $p).call($s, $hash2(["class"], {"class": "form-group"}));}, TMP_40.$$s = self, TMP_40.$$arity = 0, TMP_40), $l).call($o, $hash2(["class"], {"class": "col-xs-12 col-md-4"}));}, TMP_17.$$s = self, TMP_17.$$arity = 0, TMP_17), $i).call($k, $hash2(["class"], {"class": "row"}));
+            ($i = ($l = self).$h1, $i.$$p = (TMP_53 = function(){var self = TMP_53.$$s || this;
+
+            return self.$text("Top Speed")}, TMP_53.$$s = self, TMP_53.$$arity = 0, TMP_53), $i).call($l);
             self.$div($hash2(["class"], {"class": "s5"}));
-            ($i = ($l = self).$div, $i.$$p = (TMP_37 = function(){var self = TMP_37.$$s || this, $m, $n, TMP_38, $o, TMP_40, $p, TMP_42;
+            ($i = ($m = self).$div, $i.$$p = (TMP_54 = function(){var self = TMP_54.$$s || this, $n, $o, TMP_55;
 
-            ($m = ($n = self).$div, $m.$$p = (TMP_38 = function(){var self = TMP_38.$$s || this, $o, $p, TMP_39;
-                if (self.store == null) self.store = nil;
+            return ($n = ($o = self).$p, $n.$$p = (TMP_55 = function(){var self = TMP_55.$$s || this;
 
-              ($o = ($p = self).$label, $o.$$p = (TMP_39 = function(){var self = TMP_39.$$s || this;
+              return self.$text("" + (self.$label_speed()))}, TMP_55.$$s = self, TMP_55.$$arity = 0, TMP_55), $n).call($o, $hash2(["class"], {"class": "form-control-static"}))}, TMP_54.$$s = self, TMP_54.$$arity = 0, TMP_54), $i).call($m, $hash2(["class"], {"class": "form-group"}));
+            return ($i = ($n = self).$div, $i.$$p = (TMP_56 = function(){var self = TMP_56.$$s || this, $o, $p, TMP_57, $q, TMP_58;
 
-                return self.$text("Motor Pulley Teeth")}, TMP_39.$$s = self, TMP_39.$$arity = 0, TMP_39), $o).call($p, $hash2(["for"], {"for": "motor-pulley-teeth"}));
-                return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "motor-pulley-teeth", "type": "text", "id": "motor-pulley-teeth", "class": "form-control", "value": self.store.$get("motor-pulley-teeth"), "onkeyup": self.$method("change")}));}, TMP_38.$$s = self, TMP_38.$$arity = 0, TMP_38), $m).call($n, $hash2(["class"], {"class": "form-group"}));
-              ($m = ($o = self).$div, $m.$$p = (TMP_40 = function(){var self = TMP_40.$$s || this, $p, $q, TMP_41;
-                if (self.store == null) self.store = nil;
+            ($o = ($p = self).$p, $o.$$p = (TMP_57 = function(){var self = TMP_57.$$s || this;
 
-              ($p = ($q = self).$label, $p.$$p = (TMP_41 = function(){var self = TMP_41.$$s || this;
+              return self.$text(self.$label_speed($hash2(["weighted"], {"weighted": true})))}, TMP_57.$$s = self, TMP_57.$$arity = 0, TMP_57), $o).call($p);
+              return ($o = ($q = self).$label, $o.$$p = (TMP_58 = function(){var self = TMP_58.$$s || this;
 
-                return self.$text("Wheel Pulley Teeth")}, TMP_41.$$s = self, TMP_41.$$arity = 0, TMP_41), $p).call($q, $hash2(["for"], {"for": "wheel-pulley-teeth"}));
-                return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "wheel-pulley-teeth", "type": "text", "id": "wheel-pulley-teeth", "class": "form-control", "value": self.store.$get("wheel-pulley-teeth"), "onkeyup": self.$method("change")}));}, TMP_40.$$s = self, TMP_40.$$arity = 0, TMP_40), $m).call($o, $hash2(["class"], {"class": "form-group"}));
-              return ($m = ($p = self).$div, $m.$$p = (TMP_42 = function(){var self = TMP_42.$$s || this, $q, $r, TMP_43;
-                if (self.store == null) self.store = nil;
-
-              ($q = ($r = self).$label, $q.$$p = (TMP_43 = function(){var self = TMP_43.$$s || this;
-
-                return self.$text("Wheel size (mm)")}, TMP_43.$$s = self, TMP_43.$$arity = 0, TMP_43), $q).call($r, $hash2(["for"], {"for": "wheel-size"}));
-                return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "wheel-size", "type": "text", "id": "wheel-size", "class": "form-control", "value": self.store.$get("wheel-size"), "onkeyup": self.$method("change")}));}, TMP_42.$$s = self, TMP_42.$$arity = 0, TMP_42), $m).call($p, $hash2(["class"], {"class": "form-group"}));}, TMP_37.$$s = self, TMP_37.$$arity = 0, TMP_37), $i).call($l, $hash2(["class"], {"class": "wrap-60"}));
-            ($i = ($m = self).$div, $i.$$p = (TMP_44 = function(){var self = TMP_44.$$s || this, $n, $o, TMP_45, $p, TMP_46;
-
-            ($n = ($o = self).$label, $n.$$p = (TMP_45 = function(){var self = TMP_45.$$s || this;
-
-              return self.$text("Gear ratio")}, TMP_45.$$s = self, TMP_45.$$arity = 0, TMP_45), $n).call($o, $hash2(["class"], {"class": "control-label"}));
-              return ($n = ($p = self).$p, $n.$$p = (TMP_46 = function(){var self = TMP_46.$$s || this;
-
-              return self.$text(self.$label_gear_ratio())}, TMP_46.$$s = self, TMP_46.$$arity = 0, TMP_46), $n).call($p, $hash2(["class"], {"class": "form-control-static"}));}, TMP_44.$$s = self, TMP_44.$$arity = 0, TMP_44), $i).call($m, $hash2(["class"], {"class": "form-group"}));
-            ($i = ($n = self).$h1, $i.$$p = (TMP_47 = function(){var self = TMP_47.$$s || this;
-
-            return self.$text("Top Speed")}, TMP_47.$$s = self, TMP_47.$$arity = 0, TMP_47), $i).call($n);
-            self.$div($hash2(["class"], {"class": "s5"}));
-            ($i = ($o = self).$div, $i.$$p = (TMP_48 = function(){var self = TMP_48.$$s || this, $p, $q, TMP_49;
-
-            return ($p = ($q = self).$p, $p.$$p = (TMP_49 = function(){var self = TMP_49.$$s || this;
-
-              return self.$text("" + (self.$label_speed()))}, TMP_49.$$s = self, TMP_49.$$arity = 0, TMP_49), $p).call($q, $hash2(["class"], {"class": "form-control-static"}))}, TMP_48.$$s = self, TMP_48.$$arity = 0, TMP_48), $i).call($o, $hash2(["class"], {"class": "form-group"}));
-            return ($i = ($p = self).$div, $i.$$p = (TMP_50 = function(){var self = TMP_50.$$s || this, $q, $r, TMP_51, $s, TMP_52;
-
-            ($q = ($r = self).$p, $q.$$p = (TMP_51 = function(){var self = TMP_51.$$s || this;
-
-              return self.$text(self.$label_speed($hash2(["weighted"], {"weighted": true})))}, TMP_51.$$s = self, TMP_51.$$arity = 0, TMP_51), $q).call($r);
-              return ($q = ($s = self).$label, $q.$$p = (TMP_52 = function(){var self = TMP_52.$$s || this;
-
-              return self.$text("(weighted)")}, TMP_52.$$s = self, TMP_52.$$arity = 0, TMP_52), $q).call($s, $hash2(["class"], {"class": "control-label up-10"}));}, TMP_50.$$s = self, TMP_50.$$arity = 0, TMP_50), $i).call($p, $hash2(["class"], {"class": "form-group"}));}, TMP_11.$$s = self, TMP_11.$$arity = 0, TMP_11), $g).call($h)}, TMP_10.$$s = self, TMP_10.$$arity = 0, TMP_10), $c).call($f, $hash2(["class"], {"class": "calc-form"}));
+              return self.$text("(weighted)")}, TMP_58.$$s = self, TMP_58.$$arity = 0, TMP_58), $o).call($q, $hash2(["class"], {"class": "control-label up-10"}));}, TMP_56.$$s = self, TMP_56.$$arity = 0, TMP_56), $i).call($n, $hash2(["class"], {"class": "form-group"}));}, TMP_11.$$s = self, TMP_11.$$arity = 0, TMP_11), $g).call($h)}, TMP_10.$$s = self, TMP_10.$$arity = 0, TMP_10), $c).call($f, $hash2(["class"], {"class": "calc-form"}));
         self.$div($hash2(["class"], {"class": "s20"}));
-        ($c = ($g = self).$button, $c.$$p = (TMP_53 = function(){var self = TMP_53.$$s || this;
+        ($c = ($g = self).$button, $c.$$p = (TMP_59 = function(){var self = TMP_59.$$s || this;
 
-        return self.$text("Save")}, TMP_53.$$s = self, TMP_53.$$arity = 0, TMP_53), $c).call($g, $hash2(["onclick"], {"onclick": self.$method("save")}));
+        return self.$text("Save")}, TMP_59.$$s = self, TMP_59.$$arity = 0, TMP_59), $c).call($g, $hash2(["onclick"], {"onclick": self.$method("save")}));
         return self.$div($hash2(["class"], {"class": "s30"}));}, TMP_7.$$s = self, TMP_7.$$arity = 0, TMP_7), $a).call($b, $hash2(["class"], {"class": "jumbotron text-center"}));
-    }, TMP_54.$$arity = 0), nil) && 'render';
+    }, TMP_60.$$arity = 0), nil) && 'render';
   })($scope.base, null);
 };
 /* Generated by Opal 0.10.1 */

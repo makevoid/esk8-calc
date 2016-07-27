@@ -40,20 +40,26 @@ class Home
       h1 do
         text "ESK8 Calc"
       end
-      p do
+      p(class: "tagline") do
         text "Electric Skateboard Calculator"
       end
-
-      div(class: "s5")
+      div(class: "s20")
 
       section(class: "calc-form") {
         form {
+          div(class: "row") {
+            div(class: "col-xs-12 col-md-8") {
+              h1 { text "Battery and Motor" }
+              div(class: "s10")
+            }
+
+            div(class: "col-xs-12 col-md-4 heading-gearing") {
+              h1 { text "Gearing" }
+            }
+          }
 
           div(class: "row") {
-            h1 { text "Battery and Motor" }
-            div(class: "s5")
-
-            div(class: "col-xs-6") {
+            div(class: "col-md-4 col-xs-12") {
 
               div(class: "form-group") {
                 label(for: "batt-type") {
@@ -90,7 +96,7 @@ class Home
               }
             }
 
-            div(class: "col-xs-6") {
+            div(class: "col-xs-12 col-md-4") {
               div(class: "s30")
 
               div(class: "form-group") {
@@ -115,38 +121,44 @@ class Home
               }
 
             }
-          }
 
-          h1 { text "Gearing" }
-          div(class: "s5")
+            div(class: "col-xs-12 col-md-4") {
 
-          div(class: "wrap-60") {
-            div(class: "form-group") {
-              label(for: "motor-pulley-teeth") {
-                text "Motor Pulley Teeth"
+              div(class: "heading-gearing-sm") {
+                h1 { text "Gearing" }
               }
-              input(name: 'motor-pulley-teeth', type: "text", id: "motor-pulley-teeth", class: "form-control", value: @store.get("motor-pulley-teeth"), onkeyup: method(:change))
-            }
 
-            div(class: "form-group") {
-              label(for: "wheel-pulley-teeth") {
-                text "Wheel Pulley Teeth"
+              div(class: "s5")
+
+              div(class: "") {
+                div(class: "form-group") {
+                  label(for: "motor-pulley-teeth") {
+                    text "Motor Pulley Teeth"
+                  }
+                  input(name: 'motor-pulley-teeth', type: "text", id: "motor-pulley-teeth", class: "form-control", value: @store.get("motor-pulley-teeth"), onkeyup: method(:change))
+                }
+
+                div(class: "form-group") {
+                  label(for: "wheel-pulley-teeth") {
+                    text "Wheel Pulley Teeth"
+                  }
+                  input(name: 'wheel-pulley-teeth', type: "text", id: "wheel-pulley-teeth", class: "form-control", value: @store.get("wheel-pulley-teeth"), onkeyup: method(:change))
+                }
+
+                div(class: "form-group") {
+                  label(for: "wheel-size") {
+                    text "Wheel size (mm)"
+                  }
+                  input(name: 'wheel-size', type: "text", id: "wheel-size", class: "form-control", value: @store.get("wheel-size"), onkeyup: method(:change))
+                }
               }
-              input(name: 'wheel-pulley-teeth', type: "text", id: "wheel-pulley-teeth", class: "form-control", value: @store.get("wheel-pulley-teeth"), onkeyup: method(:change))
-            }
 
-            div(class: "form-group") {
-              label(for: "wheel-size") {
-                text "Wheel size (mm)"
+              div(class: "form-group") {
+                label(class: "control-label") { text "Gear ratio" }
+                p(class: "form-control-static") {
+                  text label_gear_ratio
+                }
               }
-              input(name: 'wheel-size', type: "text", id: "wheel-size", class: "form-control", value: @store.get("wheel-size"), onkeyup: method(:change))
-            }
-          }
-
-          div(class: "form-group") {
-            label(class: "control-label") { text "Gear ratio" }
-            p(class: "form-control-static") {
-              text label_gear_ratio
             }
           }
 
@@ -165,7 +177,6 @@ class Home
             }
             label(class: "control-label up-10") { text "(weighted)" }
           }
-
         }
       }
       div(class: "s20")
