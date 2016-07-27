@@ -14,7 +14,7 @@ Inesita::Browser.ready? do
   # setup Inesita application
   Inesita::Application.new(
     router: Router,
-    store: Store,
+    store:  Store,
     layout: Layout
   ).mount_to(Inesita::Browser.body)
 end

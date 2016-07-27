@@ -12,8 +12,9 @@ class Store
       "motor-pulley-teeth"     => 15,
       "wheel-pulley-teeth"     => 36,
       "wheel-size"             => 83,
-      "top-speed"              => 0,
-      "top-speed-weighted"     => 0,
+      "out-gear-ratio"         => "x",
+      "out-top-speed"          => 0,
+      "out-top-speed-weighted" => 0,
     }
   end
 
