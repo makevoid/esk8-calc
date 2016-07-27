@@ -28,7 +28,7 @@ class Home
   def label_speed(weighted: false)
     speed = @store.get "out-top-speed#{"-weighted" if weighted}"
     speed_kmh = speed * 1.609344
-    "#{speed.round 2} km/h - #{speed_kmh.round 2} mph"
+    "#{speed.round 2} mph - #{speed_kmh.round 2} km/h"
   end
 
   def label_gear_ratio
@@ -61,7 +61,7 @@ class Home
                 }
 
                 lipo = @store.get("batt-type-lipo") == 1
-                
+
                 select(name: "batt-type-lipo", id: "batt-type", class: "form-control", onchange: method(:change)) {
                   option(value: 1, selected: lipo) { text "Lipo" }
                   option(value: 0, selected: !lipo) { text "Li-ion" }
