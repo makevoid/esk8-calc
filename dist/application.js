@@ -23609,7 +23609,7 @@ Opal.modules["calc"] = function(Opal) {
       motor_teeth = store.$get("motor-pulley-teeth");
       wheel_teeth = store.$get("wheel-pulley-teeth");
       gear_ratio = $rb_divide(motor_teeth, wheel_teeth);
-      gear_ratio_out = ($rb_divide(wheel_teeth, motor_teeth)).$round(1);
+      gear_ratio_out = ($rb_divide(wheel_teeth, motor_teeth)).$round(2);
       store.$set("out-gear-ratio", gear_ratio_out);
       wheel_size = store.$get("wheel-size");
       top_speed_mph = $rb_times($rb_times($rb_times($rb_times(motor_rpm, wheel_size), (($scope.get('Math')).$$scope.get('PI'))), $scope.get('R')), gear_ratio);
@@ -23632,7 +23632,7 @@ Opal.modules["components/home"] = function(Opal) {
     function $Home(){};
     var self = $Home = $klass($base, $super, 'Home', $Home);
 
-    var def = self.$$proto, $scope = self.$$scope, TMP_2, TMP_3, TMP_4, TMP_5, TMP_6, TMP_55;
+    var def = self.$$proto, $scope = self.$$scope, TMP_2, TMP_3, TMP_4, TMP_5, TMP_6, TMP_54;
 
     def.store = nil;
     self.$include((($scope.get('Inesita')).$$scope.get('Component')));
@@ -23693,10 +23693,10 @@ Opal.modules["components/home"] = function(Opal) {
       return "" + (self.store.$get("out-gear-ratio")) + ":1";
     }, TMP_6.$$arity = 0);
 
-    return (Opal.defn(self, '$render', TMP_55 = function ːrender() {
+    return (Opal.defn(self, '$render', TMP_54 = function ːrender() {
       var $a, $b, TMP_7, self = this;
 
-      return ($a = ($b = self).$div, $a.$$p = (TMP_7 = function(){var self = TMP_7.$$s || this, $c, $d, TMP_8, $e, TMP_9, $f, TMP_10, $g, TMP_54;
+      return ($a = ($b = self).$div, $a.$$p = (TMP_7 = function(){var self = TMP_7.$$s || this, $c, $d, TMP_8, $e, TMP_9, $f, TMP_10, $g, TMP_53;
 
       ($c = ($d = self).$h1, $c.$$p = (TMP_8 = function(){var self = TMP_8.$$s || this;
 
@@ -23704,17 +23704,17 @@ Opal.modules["components/home"] = function(Opal) {
         ($c = ($e = self).$p, $c.$$p = (TMP_9 = function(){var self = TMP_9.$$s || this;
 
         return self.$text("Electric Skateboard Calculator")}, TMP_9.$$s = self, TMP_9.$$arity = 0, TMP_9), $c).call($e);
-        self.$div($hash2(["class"], {"class": "s10"}));
+        self.$div($hash2(["class"], {"class": "s5"}));
         ($c = ($f = self).$section, $c.$$p = (TMP_10 = function(){var self = TMP_10.$$s || this, $g, $h, TMP_11;
 
-        return ($g = ($h = self).$form, $g.$$p = (TMP_11 = function(){var self = TMP_11.$$s || this, $i, $j, TMP_12, $k, TMP_36, $l, TMP_37, $m, TMP_44, $n, TMP_47, $o, TMP_48, $p, TMP_51;
+        return ($g = ($h = self).$form, $g.$$p = (TMP_11 = function(){var self = TMP_11.$$s || this, $i, $j, TMP_12, $k, TMP_36, $l, TMP_37, $m, TMP_44, $n, TMP_47, $o, TMP_48, $p, TMP_50;
 
           ($i = ($j = self).$div, $i.$$p = (TMP_12 = function(){var self = TMP_12.$$s || this, $k, $l, TMP_13, $m, TMP_14, $n, TMP_26;
 
             ($k = ($l = self).$h1, $k.$$p = (TMP_13 = function(){var self = TMP_13.$$s || this;
 
               return self.$text("Battery and Motor")}, TMP_13.$$s = self, TMP_13.$$arity = 0, TMP_13), $k).call($l);
-              self.$div($hash2(["class"], {"class": "s10"}));
+              self.$div($hash2(["class"], {"class": "s5"}));
               ($k = ($m = self).$div, $k.$$p = (TMP_14 = function(){var self = TMP_14.$$s || this, $n, $o, TMP_15, $p, TMP_20, $q, TMP_22, $r, TMP_24;
 
               ($n = ($o = self).$div, $n.$$p = (TMP_15 = function(){var self = TMP_15.$$s || this, $p, $q, TMP_16, $r, TMP_17, lipo = nil;
@@ -23786,7 +23786,7 @@ Opal.modules["components/home"] = function(Opal) {
             ($i = ($k = self).$h1, $i.$$p = (TMP_36 = function(){var self = TMP_36.$$s || this;
 
             return self.$text("Gearing")}, TMP_36.$$s = self, TMP_36.$$arity = 0, TMP_36), $i).call($k);
-            self.$div($hash2(["class"], {"class": "s10"}));
+            self.$div($hash2(["class"], {"class": "s5"}));
             ($i = ($l = self).$div, $i.$$p = (TMP_37 = function(){var self = TMP_37.$$s || this, $m, $n, TMP_38, $o, TMP_40, $p, TMP_42;
 
             ($m = ($n = self).$div, $m.$$p = (TMP_38 = function(){var self = TMP_38.$$s || this, $o, $p, TMP_39;
@@ -23820,30 +23820,27 @@ Opal.modules["components/home"] = function(Opal) {
               return self.$text(self.$label_gear_ratio())}, TMP_46.$$s = self, TMP_46.$$arity = 0, TMP_46), $n).call($p, $hash2(["class"], {"class": "form-control-static"}));}, TMP_44.$$s = self, TMP_44.$$arity = 0, TMP_44), $i).call($m, $hash2(["class"], {"class": "form-group"}));
             ($i = ($n = self).$h1, $i.$$p = (TMP_47 = function(){var self = TMP_47.$$s || this;
 
-            return self.$text("Top Speed Results")}, TMP_47.$$s = self, TMP_47.$$arity = 0, TMP_47), $i).call($n);
-            self.$div($hash2(["class"], {"class": "s10"}));
-            ($i = ($o = self).$div, $i.$$p = (TMP_48 = function(){var self = TMP_48.$$s || this, $p, $q, TMP_49, $r, TMP_50;
+            return self.$text("Top Speed")}, TMP_47.$$s = self, TMP_47.$$arity = 0, TMP_47), $i).call($n);
+            self.$div($hash2(["class"], {"class": "s5"}));
+            ($i = ($o = self).$div, $i.$$p = (TMP_48 = function(){var self = TMP_48.$$s || this, $p, $q, TMP_49;
 
-            ($p = ($q = self).$label, $p.$$p = (TMP_49 = function(){var self = TMP_49.$$s || this;
+            return ($p = ($q = self).$p, $p.$$p = (TMP_49 = function(){var self = TMP_49.$$s || this;
 
-              return self.$text("Top Speed")}, TMP_49.$$s = self, TMP_49.$$arity = 0, TMP_49), $p).call($q, $hash2(["class"], {"class": "control-label"}));
-              return ($p = ($r = self).$p, $p.$$p = (TMP_50 = function(){var self = TMP_50.$$s || this;
+              return self.$text("" + (self.$label_speed()))}, TMP_49.$$s = self, TMP_49.$$arity = 0, TMP_49), $p).call($q, $hash2(["class"], {"class": "form-control-static"}))}, TMP_48.$$s = self, TMP_48.$$arity = 0, TMP_48), $i).call($o, $hash2(["class"], {"class": "form-group"}));
+            return ($i = ($p = self).$div, $i.$$p = (TMP_50 = function(){var self = TMP_50.$$s || this, $q, $r, TMP_51, $s, TMP_52;
 
-              return self.$text(self.$label_speed())}, TMP_50.$$s = self, TMP_50.$$arity = 0, TMP_50), $p).call($r, $hash2(["class"], {"class": "form-control-static"}));}, TMP_48.$$s = self, TMP_48.$$arity = 0, TMP_48), $i).call($o, $hash2(["class"], {"class": "form-group"}));
-            return ($i = ($p = self).$div, $i.$$p = (TMP_51 = function(){var self = TMP_51.$$s || this, $q, $r, TMP_52, $s, TMP_53;
+            ($q = ($r = self).$p, $q.$$p = (TMP_51 = function(){var self = TMP_51.$$s || this;
 
-            ($q = ($r = self).$label, $q.$$p = (TMP_52 = function(){var self = TMP_52.$$s || this;
+              return self.$text(self.$label_speed($hash2(["weighted"], {"weighted": true})))}, TMP_51.$$s = self, TMP_51.$$arity = 0, TMP_51), $q).call($r);
+              return ($q = ($s = self).$label, $q.$$p = (TMP_52 = function(){var self = TMP_52.$$s || this;
 
-              return self.$text("Top Speed (weighted)")}, TMP_52.$$s = self, TMP_52.$$arity = 0, TMP_52), $q).call($r, $hash2(["class"], {"class": "control-label"}));
-              return ($q = ($s = self).$p, $q.$$p = (TMP_53 = function(){var self = TMP_53.$$s || this;
-
-              return self.$text(self.$label_speed($hash2(["weighted"], {"weighted": true})))}, TMP_53.$$s = self, TMP_53.$$arity = 0, TMP_53), $q).call($s, $hash2(["class"], {"class": "form-control-static"}));}, TMP_51.$$s = self, TMP_51.$$arity = 0, TMP_51), $i).call($p, $hash2(["class"], {"class": "form-group"}));}, TMP_11.$$s = self, TMP_11.$$arity = 0, TMP_11), $g).call($h)}, TMP_10.$$s = self, TMP_10.$$arity = 0, TMP_10), $c).call($f, $hash2(["class"], {"class": "calc-form"}));
+              return self.$text("(weighted)")}, TMP_52.$$s = self, TMP_52.$$arity = 0, TMP_52), $q).call($s, $hash2(["class"], {"class": "control-label up-10"}));}, TMP_50.$$s = self, TMP_50.$$arity = 0, TMP_50), $i).call($p, $hash2(["class"], {"class": "form-group"}));}, TMP_11.$$s = self, TMP_11.$$arity = 0, TMP_11), $g).call($h)}, TMP_10.$$s = self, TMP_10.$$arity = 0, TMP_10), $c).call($f, $hash2(["class"], {"class": "calc-form"}));
         self.$div($hash2(["class"], {"class": "s20"}));
-        ($c = ($g = self).$button, $c.$$p = (TMP_54 = function(){var self = TMP_54.$$s || this;
+        ($c = ($g = self).$button, $c.$$p = (TMP_53 = function(){var self = TMP_53.$$s || this;
 
-        return self.$text("Save")}, TMP_54.$$s = self, TMP_54.$$arity = 0, TMP_54), $c).call($g, $hash2(["onclick"], {"onclick": self.$method("save")}));
+        return self.$text("Save")}, TMP_53.$$s = self, TMP_53.$$arity = 0, TMP_53), $c).call($g, $hash2(["onclick"], {"onclick": self.$method("save")}));
         return self.$div($hash2(["class"], {"class": "s30"}));}, TMP_7.$$s = self, TMP_7.$$arity = 0, TMP_7), $a).call($b, $hash2(["class"], {"class": "jumbotron text-center"}));
-    }, TMP_55.$$arity = 0), nil) && 'render';
+    }, TMP_54.$$arity = 0), nil) && 'render';
   })($scope.base, null);
 };
 /* Generated by Opal 0.10.1 */
