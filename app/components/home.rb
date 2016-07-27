@@ -72,21 +72,21 @@ class Home
                 label(for: "batt-cells") {
                   text "Number of Cells (6S-12S)"
                 }
-                input(name: 'batt-cells', value: @store.get("batt-cells"), onchange: method(:change), type: "text", id: "batt-cells", class: "form-control")
+                input(name: 'batt-cells', value: @store.get("batt-cells"), onkeyup: method(:change), type: "text", id: "batt-cells", class: "form-control")
               }
 
               div(class: "form-group") {
                 label(for: "motor-kv") {
                   text "Motor KV"
                 }
-                input(name: 'motor-kv', value: @store.get("motor-kv"), onchange: method(:change), type: "text", id: "motor-kv", class: "form-control")
+                input(name: 'motor-kv', value: @store.get("motor-kv"), onkeyup: method(:change), type: "text", id: "motor-kv", class: "form-control")
               }
 
               div(class: "form-group") {
                 label(for: "system-efficiency") {
                   text "Efficiency  (60-90%)"
                 }
-                input(name: 'system-efficiency', value: @store.get("system-efficiency"), onchange: method(:change), type: "text", id: "system-efficiency", class: "form-control")
+                input(name: 'system-efficiency', value: @store.get("system-efficiency"), onkeyup: method(:change), type: "text", id: "system-efficiency", class: "form-control")
               }
             }
 
@@ -125,21 +125,21 @@ class Home
               label(for: "motor-pulley-teeth") {
                 text "Motor Pulley Teeth"
               }
-              input(name: 'motor-pulley-teeth', type: "text", id: "motor-pulley-teeth", class: "form-control", value: @store.get("motor-pulley-teeth"), onchange: method(:change))
+              input(name: 'motor-pulley-teeth', type: "text", id: "motor-pulley-teeth", class: "form-control", value: @store.get("motor-pulley-teeth"), onkeyup: method(:change))
             }
 
             div(class: "form-group") {
               label(for: "wheel-pulley-teeth") {
                 text "Wheel Pulley Teeth"
               }
-              input(name: 'wheel-pulley-teeth', type: "text", id: "wheel-pulley-teeth", class: "form-control", value: @store.get("wheel-pulley-teeth"), onchange: method(:change))
+              input(name: 'wheel-pulley-teeth', type: "text", id: "wheel-pulley-teeth", class: "form-control", value: @store.get("wheel-pulley-teeth"), onkeyup: method(:change))
             }
 
             div(class: "form-group") {
               label(for: "wheel-size") {
                 text "Wheel size (mm)"
               }
-              input(name: 'wheel-size', type: "text", id: "wheel-size", class: "form-control", value: @store.get("wheel-size"), onchange: method(:change))
+              input(name: 'wheel-size', type: "text", id: "wheel-size", class: "form-control", value: @store.get("wheel-size"), onkeyup: method(:change))
             }
           }
 

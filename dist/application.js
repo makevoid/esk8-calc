@@ -23738,21 +23738,21 @@ Opal.modules["components/home"] = function(Opal) {
                 ($q = ($r = self).$label, $q.$$p = (TMP_21 = function(){var self = TMP_21.$$s || this;
 
                   return self.$text("Number of Cells (6S-12S)")}, TMP_21.$$s = self, TMP_21.$$arity = 0, TMP_21), $q).call($r, $hash2(["for"], {"for": "batt-cells"}));
-                  return self.$input($hash2(["name", "value", "onchange", "type", "id", "class"], {"name": "batt-cells", "value": self.store.$get("batt-cells"), "onchange": self.$method("change"), "type": "text", "id": "batt-cells", "class": "form-control"}));}, TMP_20.$$s = self, TMP_20.$$arity = 0, TMP_20), $n).call($p, $hash2(["class"], {"class": "form-group"}));
+                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "batt-cells", "value": self.store.$get("batt-cells"), "onkeyup": self.$method("change"), "type": "text", "id": "batt-cells", "class": "form-control"}));}, TMP_20.$$s = self, TMP_20.$$arity = 0, TMP_20), $n).call($p, $hash2(["class"], {"class": "form-group"}));
                 ($n = ($q = self).$div, $n.$$p = (TMP_22 = function(){var self = TMP_22.$$s || this, $r, $s, TMP_23;
                   if (self.store == null) self.store = nil;
 
                 ($r = ($s = self).$label, $r.$$p = (TMP_23 = function(){var self = TMP_23.$$s || this;
 
                   return self.$text("Motor KV")}, TMP_23.$$s = self, TMP_23.$$arity = 0, TMP_23), $r).call($s, $hash2(["for"], {"for": "motor-kv"}));
-                  return self.$input($hash2(["name", "value", "onchange", "type", "id", "class"], {"name": "motor-kv", "value": self.store.$get("motor-kv"), "onchange": self.$method("change"), "type": "text", "id": "motor-kv", "class": "form-control"}));}, TMP_22.$$s = self, TMP_22.$$arity = 0, TMP_22), $n).call($q, $hash2(["class"], {"class": "form-group"}));
+                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "motor-kv", "value": self.store.$get("motor-kv"), "onkeyup": self.$method("change"), "type": "text", "id": "motor-kv", "class": "form-control"}));}, TMP_22.$$s = self, TMP_22.$$arity = 0, TMP_22), $n).call($q, $hash2(["class"], {"class": "form-group"}));
                 return ($n = ($r = self).$div, $n.$$p = (TMP_24 = function(){var self = TMP_24.$$s || this, $s, $t, TMP_25;
                   if (self.store == null) self.store = nil;
 
                 ($s = ($t = self).$label, $s.$$p = (TMP_25 = function(){var self = TMP_25.$$s || this;
 
                   return self.$text("Efficiency  (60-90%)")}, TMP_25.$$s = self, TMP_25.$$arity = 0, TMP_25), $s).call($t, $hash2(["for"], {"for": "system-efficiency"}));
-                  return self.$input($hash2(["name", "value", "onchange", "type", "id", "class"], {"name": "system-efficiency", "value": self.store.$get("system-efficiency"), "onchange": self.$method("change"), "type": "text", "id": "system-efficiency", "class": "form-control"}));}, TMP_24.$$s = self, TMP_24.$$arity = 0, TMP_24), $n).call($r, $hash2(["class"], {"class": "form-group"}));}, TMP_14.$$s = self, TMP_14.$$arity = 0, TMP_14), $k).call($m, $hash2(["class"], {"class": "col-xs-6"}));
+                  return self.$input($hash2(["name", "value", "onkeyup", "type", "id", "class"], {"name": "system-efficiency", "value": self.store.$get("system-efficiency"), "onkeyup": self.$method("change"), "type": "text", "id": "system-efficiency", "class": "form-control"}));}, TMP_24.$$s = self, TMP_24.$$arity = 0, TMP_24), $n).call($r, $hash2(["class"], {"class": "form-group"}));}, TMP_14.$$s = self, TMP_14.$$arity = 0, TMP_14), $k).call($m, $hash2(["class"], {"class": "col-xs-6"}));
               return ($k = ($n = self).$div, $k.$$p = (TMP_26 = function(){var self = TMP_26.$$s || this, $o, $p, TMP_27, $q, TMP_30, $r, TMP_33;
 
               self.$div($hash2(["class"], {"class": "s30"}));
@@ -23795,21 +23795,21 @@ Opal.modules["components/home"] = function(Opal) {
               ($o = ($p = self).$label, $o.$$p = (TMP_39 = function(){var self = TMP_39.$$s || this;
 
                 return self.$text("Motor Pulley Teeth")}, TMP_39.$$s = self, TMP_39.$$arity = 0, TMP_39), $o).call($p, $hash2(["for"], {"for": "motor-pulley-teeth"}));
-                return self.$input($hash2(["name", "type", "id", "class", "value", "onchange"], {"name": "motor-pulley-teeth", "type": "text", "id": "motor-pulley-teeth", "class": "form-control", "value": self.store.$get("motor-pulley-teeth"), "onchange": self.$method("change")}));}, TMP_38.$$s = self, TMP_38.$$arity = 0, TMP_38), $m).call($n, $hash2(["class"], {"class": "form-group"}));
+                return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "motor-pulley-teeth", "type": "text", "id": "motor-pulley-teeth", "class": "form-control", "value": self.store.$get("motor-pulley-teeth"), "onkeyup": self.$method("change")}));}, TMP_38.$$s = self, TMP_38.$$arity = 0, TMP_38), $m).call($n, $hash2(["class"], {"class": "form-group"}));
               ($m = ($o = self).$div, $m.$$p = (TMP_40 = function(){var self = TMP_40.$$s || this, $p, $q, TMP_41;
                 if (self.store == null) self.store = nil;
 
               ($p = ($q = self).$label, $p.$$p = (TMP_41 = function(){var self = TMP_41.$$s || this;
 
                 return self.$text("Wheel Pulley Teeth")}, TMP_41.$$s = self, TMP_41.$$arity = 0, TMP_41), $p).call($q, $hash2(["for"], {"for": "wheel-pulley-teeth"}));
-                return self.$input($hash2(["name", "type", "id", "class", "value", "onchange"], {"name": "wheel-pulley-teeth", "type": "text", "id": "wheel-pulley-teeth", "class": "form-control", "value": self.store.$get("wheel-pulley-teeth"), "onchange": self.$method("change")}));}, TMP_40.$$s = self, TMP_40.$$arity = 0, TMP_40), $m).call($o, $hash2(["class"], {"class": "form-group"}));
+                return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "wheel-pulley-teeth", "type": "text", "id": "wheel-pulley-teeth", "class": "form-control", "value": self.store.$get("wheel-pulley-teeth"), "onkeyup": self.$method("change")}));}, TMP_40.$$s = self, TMP_40.$$arity = 0, TMP_40), $m).call($o, $hash2(["class"], {"class": "form-group"}));
               return ($m = ($p = self).$div, $m.$$p = (TMP_42 = function(){var self = TMP_42.$$s || this, $q, $r, TMP_43;
                 if (self.store == null) self.store = nil;
 
               ($q = ($r = self).$label, $q.$$p = (TMP_43 = function(){var self = TMP_43.$$s || this;
 
                 return self.$text("Wheel size (mm)")}, TMP_43.$$s = self, TMP_43.$$arity = 0, TMP_43), $q).call($r, $hash2(["for"], {"for": "wheel-size"}));
-                return self.$input($hash2(["name", "type", "id", "class", "value", "onchange"], {"name": "wheel-size", "type": "text", "id": "wheel-size", "class": "form-control", "value": self.store.$get("wheel-size"), "onchange": self.$method("change")}));}, TMP_42.$$s = self, TMP_42.$$arity = 0, TMP_42), $m).call($p, $hash2(["class"], {"class": "form-group"}));}, TMP_37.$$s = self, TMP_37.$$arity = 0, TMP_37), $i).call($l, $hash2(["class"], {"class": "wrap-60"}));
+                return self.$input($hash2(["name", "type", "id", "class", "value", "onkeyup"], {"name": "wheel-size", "type": "text", "id": "wheel-size", "class": "form-control", "value": self.store.$get("wheel-size"), "onkeyup": self.$method("change")}));}, TMP_42.$$s = self, TMP_42.$$arity = 0, TMP_42), $m).call($p, $hash2(["class"], {"class": "form-group"}));}, TMP_37.$$s = self, TMP_37.$$arity = 0, TMP_37), $i).call($l, $hash2(["class"], {"class": "wrap-60"}));
             ($i = ($m = self).$div, $i.$$p = (TMP_44 = function(){var self = TMP_44.$$s || this, $n, $o, TMP_45, $p, TMP_46;
 
             ($n = ($o = self).$label, $n.$$p = (TMP_45 = function(){var self = TMP_45.$$s || this;
