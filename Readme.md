@@ -18,6 +18,8 @@ Ruby 1.9+ installed
 ### Setup and start
 
 ```sh
+$ gem i bundler
+
 $ bundle install
 $ bundle exec inesita server
 ```
