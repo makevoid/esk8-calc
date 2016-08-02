@@ -196,6 +196,14 @@ class Home
       # }
 
       div(class: "s30")
+
+      div(class:"right mini") {
+        a(href: "https://github.com/makevoid/esk8-calc/blob/master/app/calc.rb") {
+          text "source code"
+        }
+      }
+      
+      div(class: "s10")
     end
 
   end
