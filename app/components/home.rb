@@ -50,7 +50,7 @@ class Home
       }
 
       div(class: "s20")
-      section(class: "calc-form w-95") {
+      section(class: "calc-form w90") {
         form {
           div(class: "row") {
             div(class: "col-xs-12 col-md-8") {
