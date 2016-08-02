@@ -50,7 +50,7 @@ class Home
       }
 
       div(class: "s20")
-      section(class: "calc-form") {
+      section(class: "calc-form w-95") {
         form {
           div(class: "row") {
             div(class: "col-xs-12 col-md-8") {
@@ -186,10 +186,9 @@ class Home
       }
       div(class: "s20")
 
-      button(onclick: method(:save), class: "btn btn-primary btn-lg") {
+      button(onclick: method(:save), class: "btn btn-primary") {
         text "Save"
       }
-
 
       # div(class: "s10")
       # div {
