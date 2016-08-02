@@ -37,14 +37,19 @@ class Home
 
   def render
     div class: 'jumbotron text-center' do
-      h1 do
-        text "ESK8 Calc"
-      end
-      p(class: "tagline") do
-        text "Electric Skateboard Calculator"
-      end
-      div(class: "s20")
+      # TODO: move in sass
+      div(style: "background: url(static/esk8_calc_bg_slim.jpg); background-size: cover; width: 100%; height: 200px; text-shadow: 1px 1px 0px #FFF; padding-top: 20px;") {
+        div(style: "text-align: center;, padding-top: 20px") {
+          h1 {
+            text "ESK8 Calc"
+          }
+          p(class: "tagline", style: "font-weight: bold") {
+            text "Electric Skateboard Calculator"
+          }
+        }
+      }
 
+      div(class: "s20")
       section(class: "calc-form") {
         form {
           div(class: "row") {
@@ -181,9 +186,15 @@ class Home
       }
       div(class: "s20")
 
-      button(onclick: method(:save)) {
+      button(onclick: method(:save), class: "btn btn-primary btn-lg") {
         text "Save"
       }
+
+
+      # div(class: "s10")
+      # div {
+      #   text "(refresh the page to reload the parameters)"
+      # }
 
       div(class: "s30")
     end
