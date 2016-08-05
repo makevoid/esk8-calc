@@ -8,7 +8,9 @@ module URLUpdater
   end
 
   def url_load_values!
-    json_configs  = $$.location.hash
+    hash = $$.location.hash
+    return if !hash || hash == "" || hash == "#"
+    json_configs  = hash
     json_configs  = json_configs[1..-1]
 
     # decode the url it it's CGI encoded
