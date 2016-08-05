@@ -32,5 +32,8 @@ class Calc
     top_speed_mph_w = top_speed_mph * efficiency
     store.set "out-top-speed", top_speed_mph
     store.set "out-top-speed-weighted", top_speed_mph_w
+
+    erpm = batt_volts * motor_kv * 7
+    store.set "out-motor-erpm", erpm
   end
 end

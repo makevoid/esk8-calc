@@ -5,6 +5,9 @@ require 'inesita'
 require 'router'
 require 'store'
 require 'layout'
+require 'native'
+
+require 'lib/url_updater'
 
 # require all components
 require_tree './components'

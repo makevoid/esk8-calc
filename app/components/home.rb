@@ -1,22 +1,40 @@
 require 'calc'
+require 'lib/url_updater'
 
 class Home
   include Inesita::Component
+  include URLUpdater
 
   def initialize
     block = lambda do
+      url_load_values!
       Calc.calc! @store
       render!
     end
 
+    `window.setTimeout(#{block.to_n}, 300)`
     `window.setTimeout(#{block.to_n}, 1000)`
+
+    `on_hash_change = #{on_hash_change.to_n}`
+    $$.window.addEventListener "hashchange", `on_hash_change`
   end
+
+  def on_hash_change
+    -> (e) {
+      url_load_values!
+    }
+  end
+
 
   def change(e)
     key = e.target.name
     val = e.target.value
-    `console.log(key, val)`
-    @store.set key, val.to_i
+    # `console.log(key, val)`
+    unless key == "batt-cells"
+      @store.set key, val.to_i
+    else
+      @store.set key, val.to_f
+    end
     Calc.calc! @store
     render!
   end
@@ -37,8 +55,7 @@ class Home
 
   def render
     div class: 'jumbotron text-center' do
-      # TODO: move in sass
-      div(style: "background: url(static/esk8_calc_bg_slim.jpg); background-size: cover; width: 100%; height: 200px; text-shadow: 1px 1px 0px #FFF; padding-top: 20px;") {
+      div(class: "header header-bg-img") {
         div(style: "text-align: center;, padding-top: 20px") {
           h1 {
             text "ESK8 Calc"
@@ -95,14 +112,14 @@ class Home
 
               div(class: "form-group") {
                 label(for: "system-efficiency") {
-                  text "Efficiency  (60-90%)"
+                  text "Efficiency  (60-90% or 80-95% motor)"
                 }
                 input(name: 'system-efficiency', value: @store.get("system-efficiency"), onkeyup: method(:change), type: "text", id: "system-efficiency", class: "form-control")
               }
             }
 
-            div(class: "col-xs-12 col-md-4") {
-              div(class: "s30")
+            div(class: "col-xs-12 col-md-4 col-mid") {
+              div(class: "s5")
 
               div(class: "form-group") {
                 label(class: "control-label") { text "Battery volts" }
@@ -122,6 +139,13 @@ class Home
                 label(class: "control-label") { text "Motor RPM (weighted)" }
                 p(class: "form-control-static") {
                   text "#{(@store.get "out-motor-rpm-weighted").round} RPM"
+                }
+              }
+
+              div(class: "form-group") {
+                label(class: "control-label") { text "ERPM (7 pole pairs)" }
+                p(class: "form-control-static") {
+                  text "#{(@store.get "out-motor-erpm").round} ERPM"
                 }
               }
 
@@ -158,6 +182,7 @@ class Home
                 }
               }
 
+              div(class: "s10")
               div(class: "form-group") {
                 label(class: "control-label") { text "Gear ratio" }
                 p(class: "form-control-static") {
@@ -202,8 +227,16 @@ class Home
           text "source code"
         }
       }
-      
+
       div(class: "s10")
+
+      div(){
+        a(href: '/#{"batt-type-lipo":1,"batt-cells":12,"motor-kv":200,"system-efficiency":80,"motor-pulley-teeth":15,"wheel-pulley-teeth":36,"wheel-size":83}') {
+          text "test"
+        }
+      }
+
+      url_update!
     end
 
   end
