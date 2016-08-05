@@ -9,7 +9,7 @@ module URLUpdater
 
   def url_load_values!
     json_configs  = $$.location.hash
-    json_configs  = json_configs[1..-1].to_n
+    json_configs  = json_configs[1..-2].to_n
     `console.log(window.location.hash)`
     `json_configs = JSON.parse(json_configs)`
     configs  = Hash.new `json_configs`
