@@ -230,11 +230,13 @@ class Home
 
       div(class: "s10")
 
-      div(){
-        a(href: '/#{"batt-type-lipo":1,"batt-cells":12,"motor-kv":200,"system-efficiency":80,"motor-pulley-teeth":15,"wheel-pulley-teeth":36,"wheel-size":83}') {
-          text "test"
-        }
-      }
+      # test url
+      #
+      # div(){
+      #   a(href: '/#{"batt-type-lipo":1,"batt-cells":12,"motor-kv":200,"system-efficiency":80,"motor-pulley-teeth":15,"wheel-pulley-teeth":36,"wheel-size":83}') {
+      #     text "test"
+      #   }
+      # }
 
       url_update!
     end
