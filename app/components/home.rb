@@ -8,6 +8,7 @@ class Home
   def initialize
     block = lambda do
       url_load_values!
+      @store.localStorage_load!
       Calc.calc! @store
       render!
     end
@@ -211,6 +212,11 @@ class Home
       }
       div(class: "s20")
 
+
+
+      # button(onclick: method(:load), class: "sr10 btn btn-primary") {
+      #   text "Load"
+      # }
       button(onclick: method(:save), class: "btn btn-primary") {
         text "Save"
       }

@@ -24,7 +24,6 @@ class Store
       "out-top-speed-weighted" => 0,
     }
     store = @store.to_n
-    # localStorage_load!
   end
 
   def set(key, value)
