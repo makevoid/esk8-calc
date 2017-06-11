@@ -1,12 +1,17 @@
 class Calc
   LIPO_VOLTS = 3.7
   LIIO_VOLTS = 3.6
+  LIFE_VOLTS = 3.2
 
   R = 0.00003728226
 
   def self.calc!(store)
     type_lipo  = store.get "batt-type-lipo"
-    cell_volts = type_lipo == 1 ? LIPO_VOLTS : LIIO_VOLTS
+    cell_volts = case type_lipo
+      when 0 then LIIO_VOLTS
+      when 1 then LIPO_VOLTS
+      when 2 then LIFE_VOLTS
+    end
 
     batt_cells = store.get "batt-cells"
     batt_volts = (batt_cells * cell_volts).round 1
