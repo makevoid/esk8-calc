@@ -217,9 +217,11 @@ class Home
       # button(onclick: method(:load), class: "sr10 btn btn-primary") {
       #   text "Load"
       # }
-      button(onclick: method(:save), class: "btn btn-primary") {
-        text "Save"
-      }
+      
+      # TODO: re-enable
+      # button(onclick: method(:save), class: "btn btn-primary") {
+      #   text "Save"
+      # }
 
       # div(class: "s10")
       # div {
