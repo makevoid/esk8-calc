@@ -89,11 +89,13 @@ class Home
                   text "Battery type"
                 }
 
-                lipo = @store.get("batt-type-lipo") == 1
+                lipo = @store.get("batt-type-lipo")
+                lipo = lipo.to_i
 
                 select(name: "batt-type-lipo", id: "batt-type", class: "form-control", onchange: method(:change)) {
-                  option(value: 1, selected: lipo) { text "Lipo" }
-                  option(value: 0, selected: !lipo) { text "Li-ion" }
+                  option(value: 0, selected: lipo==0) { text "Li-ion" }
+                  option(value: 2, selected: lipo==2) { text "LiFePo4" }
+                  option(value: 1, selected: lipo==1) { text "Lipo" }
                 }
               }
 
@@ -217,11 +219,13 @@ class Home
       # button(onclick: method(:load), class: "sr10 btn btn-primary") {
       #   text "Load"
       # }
-      
+
       # TODO: re-enable
       # button(onclick: method(:save), class: "btn btn-primary") {
       #   text "Save"
       # }
+
+      # TODO: add Copy URL button
 
       # div(class: "s10")
       # div {
